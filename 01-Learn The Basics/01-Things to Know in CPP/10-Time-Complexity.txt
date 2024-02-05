@@ -1,0 +1,24 @@
+Its the rise of time taken with respect to the number of operations done for a code to execute.
+
+example:
+   for(let i=0;i<n;i++){
+    for(let j=0;j<n;j++){
+
+    }
+   }
+1=>n times=>n
+2=>n times=>n
+..                => total time complexity n*n=>O(n^2)
+..
+n-1=>n times
+
+Big-O => worst case tc.
+Theta=>avg case tc
+Omega=> best case tc.
+
+we should always consider Big-O for time complexity.
+igonore the smaller values.
+
+Space complexity=> auxuliary and input.=> auxuliary means new space for some operation.and input means jo diya hai uska space.
+
+Never change the input variable value,means its space.

@@ -8,7 +8,7 @@ void print(int i,int n){
 
 void print1(int i,int n){
   if(n>i) return;
-  print1(i,n+1);
+  print1(i,n+1); // p(3,1)=>p(3,1+1)=>p(3,2+1)=>p(3,3+1)
   cout<<n<<endl;
 }
 

@@ -1,22 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
+    // declaring vector
     vector<int> v;
+    // adding elements
     v.push_back(2); 
     v.push_back(2); 
     v.emplace_back(3); // similar to push_back ,but faster.
+    // printing by index
     cout<<v[0]<<" "<<v[1]<<endl;
 
+    // vector of pairs
     vector<pair<int,int>> vp;
     vp.push_back({1,2});
     vp.emplace_back(2,4); //no need of the curly braces.
+    // printing by pair.first and pair.second
     cout<<vp[0].first<<" "<<vp[1].second<<endl;
-
+    
     vector<int> v2(5,1); // vector with the 1 value of size 5
     cout<<v2[0]<<endl;
 
     vector<int> v3(10); // initialize the vector with 0 or garbage value,of size 10
-    cout<<v3[9]<<endl;
+    cout<<v3[9]<<endl; //can access with index also
     
 
     // !Iterator,gives the address of vector element.
@@ -31,10 +36,14 @@ int main(){
     cout<<*it2;
     
     cout<<v.back()<<endl;//last element in vector
+    for(int i=0;i<v.size();i++){
+        cout<<v[i]<<" "<<endl;
+    }
 
     for(auto it=v.begin();it!=v.end();it++){
         cout<<*it<<" "<<endl;
     }
+
     for(auto it:v){
         cout<<it<<" "<<endl;
     }
@@ -59,5 +68,6 @@ int main(){
     cout<<v.size()<<endl;
     v.clear();//clear entire vector
     cout<<v.size();
+    // vector.back() for last element in vector
     return 0;
 }
